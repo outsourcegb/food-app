@@ -14,7 +14,10 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-      <Route path='/user-profile' element={<>User profile page</>} />
+      <Route
+        path='/user-profile'
+        element={<Layout>User profile page</Layout>}
+      />
       <Route path='*' element={<PageNotFound />} />
     </Routes>
   );
